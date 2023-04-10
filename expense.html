@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="expense.css">
+    <title>EXPENSE TRACKER </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+            <form action="/action_page.php" id="form" >
+               <fieldset class="mt-5  ms-5 me-5 ">
+                
+                <div class=" mb-2 mt-5">
+                    <label for="amount" class="text-capitalize fs-3 mb-2">choose expenseamount:</label>
+                    <input type="number" id="amount" class="form-control " name="amount" placeholder="enter the amount"/>
+                </div><br/>
+                <div class=" mb-2  mt-2">
+                    <label for="description" class="text-capitalize fs-3 mb-2 ">choose description:</label>
+                    <input type="text" id="description"  class="form-control ms-1 " name="description" placeholder="enter the description" />
+                </div><br />
+                <div class=" mb-2  mt-4">
+                    <label for="category" class="text-capitalize fs-3 mb-2">choose category:</label>
+                <select class="form-select" aria-label="Default select example" name="category" id="category">
+                    <option selected disabled> enter your category</option>
+                    <option >on-vacation</option>
+                    <option >movie</option>
+                    <option >food</option>
+                    <option >fuel</option>
+                    <option >jungle-safari</option>
+                </select>
+                
+                </div><br />
+            <button type="submit"  class="btn btn-secondary"> Add Expanses</button>
+           </fieldset>
+        </form>
+    <ul id="items" class="list-group mt-5  ms-5 me-5 me-5">
+        <li class="list-group-item ">100 - movie-vacation <button class="edit-button">Edit<button 
+                                class="btn btn-danger btn-sm float-right delete">X</li>
+        <li class="list-group-item">200-fuel-petrol <button class="edit-button">Edit<button
+                    class="btn btn-danger btn-sm float-right delete">X</li>
+        <li class="list-group-item">150-food-pizza<button class="edit-button">Edit<button
+                    class="btn btn-danger btn-sm float-right delete">X</li>
+        <li class="list-group-item"> 500-jungle-safari-tiger <button class="edit-button">Edit<button
+                    class="btn btn-danger btn-sm float-right delete">X</li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="expense.js"></script>
+</body>
+</html>
